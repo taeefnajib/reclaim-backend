@@ -56,6 +56,7 @@ async def detect_object(file: UploadFile = File(...)):
             gemini_file,
             """
             Analyze the provided image and identify the primary or most noticeable object. 
+            Use a generic name for the object. Do not detect model or category of the object.
             Your response must strictly adhere to the following JSON format:
 
             ```json
